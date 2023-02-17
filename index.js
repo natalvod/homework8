@@ -106,7 +106,7 @@ function calling() {
 function beeps(callback) {
     setTimeout(() => {
         console.log('Идут гудки...');
-        callback(beepsTalk);
+        callback();
     }, 1000);
 }
 
@@ -115,5 +115,5 @@ function talk() {
 }
 
 calling();
-let beepsTalk = beeps(talk);
+beeps(talk);
 
